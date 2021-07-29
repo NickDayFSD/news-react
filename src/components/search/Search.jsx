@@ -7,6 +7,7 @@ const SearchBar = ({ text, onChange, onSubmit }) => (
       <label htmlFor="text">NEWS</label>
       <input
         id="text"
+        placeholder="what news"
         type="text"
         name="text"
         value={text}
@@ -18,9 +19,9 @@ const SearchBar = ({ text, onChange, onSubmit }) => (
 );
 
 SearchBar.propTypes = {
-  text: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  text: PropTypes.string,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func
 };
 
 export default SearchBar;

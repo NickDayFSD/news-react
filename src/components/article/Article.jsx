@@ -13,12 +13,11 @@ const Article = ({ title, author, description, urlToImage }) => {
   );
 };
 
-
 Article.propTypes = {
   urlToImage: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  description: PropTypes.string
+  title: PropTypes.string,
+  author: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default Article;

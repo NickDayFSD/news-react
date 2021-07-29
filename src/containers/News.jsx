@@ -19,7 +19,6 @@ export default class Header extends Component {
     e.preventDefault();
     this.setState({ loading: true });
     const news = await fetchNews(this.state.text);
-    console.log(news);
     this.setState({ articles: news, loading: false });
   }
 

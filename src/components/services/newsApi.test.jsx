@@ -1,6 +1,6 @@
 import { fetchNews } from './newsApi';
 
-describe('News API', () => {
+describe.skip('News API', () => {
   it('fetches articles about seals', async () => {
     const searchTerm = 'seals';
 
